@@ -3,6 +3,7 @@
         background-color: grey;
     }
     .container{
+        position: relative;
         background-color: whitesmoke;
         margin: 20px;
         -o-border-radius: 30px;
@@ -15,11 +16,46 @@
         display: flex;
         flex-direction: column;
     }
+    figure{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
     .figureinfo{
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 40px;
     }
+  
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+   .nav-toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+   }
+ 
+   .links {
+    display:block;
+    height: 0;
+    overflow: hidden;
+    -o-transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.show-links {
+    height: auto;
+  }
 }
 @media only screen and (min-width: 768px){
     body{
@@ -40,7 +76,10 @@
     }
     .figureinfo{
         justify-content: flex-start;
-        /* position: relative; */
+        position: relative;
+    }
+    .nav-toggle{
+        display: none;
     }
 }
 
@@ -62,6 +101,7 @@ nav ul{
 }
 nav li{
     margin-left: 20px;
+    justify-content: space-between;
     list-style: none;
     text-decoration:none;
     text-transform: uppercase;
@@ -72,7 +112,8 @@ a:link,a:visited{
     color: black;
     text-decoration: none;
 }
-nav a:hover,a:focus{
+
+ nav a:hover,a:focus{
     background-color: #304cfd;
     -o-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -81,6 +122,23 @@ nav a:hover,a:focus{
     border-radius: 5px;
     padding: 5px;
 }
+.nav-toggle{
+    font-size: 1.5rem;
+    color: #49a6e9;
+    background: transparent;
+    border-color: transparent;
+    -o-transition: all 0.3s linear;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.nav-toggle:hover {
+    color: #49a6e9;
+    transform: rotate(90deg);
+  }
+
 img{
     width: 200px;
     height: auto;
@@ -116,6 +174,7 @@ figcaption{
 .social-links{
     margin-top: 30px;
     margin-left: 50px;
+    
 }
 .social-links a{
     margin-left: 30px;
