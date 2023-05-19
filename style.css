@@ -240,11 +240,11 @@ figcaption{
 }
 .skills-1,.skills-2{
     background-color:rgb(151, 205, 221) ;
-    border-radius: 10px;
+    -o-border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 10px;
 }
 .skill h2{
     margin-top: 10px;
