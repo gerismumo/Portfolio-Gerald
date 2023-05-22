@@ -31,9 +31,6 @@
     }
   
     nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
     }
@@ -44,7 +41,11 @@
    }
  
    .links {
-    display:block;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 100%;
+    display:inline-block;
+    background-color: #304cfd;
     height: 0;
     overflow: hidden;
     -o-transition:all 0.3s linear;
@@ -52,6 +53,20 @@
     -moz-transition:all 0.3s linear;
     -ms-transition:all 0.3s linear;
     transition:all 0.3s linear;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a:focus{
+    background-color: #304cfd;
+    padding: 5px;
+}
+hr{
+    margin-right: 60px;
+    color: gray;
 }
 .show-links {
     height: auto;
@@ -81,6 +96,15 @@
     }
     .nav-toggle{
         display: none;
+    }
+    nav a:hover, nav a:focus{
+        background-color: #304cfd;
+        -o-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        padding: 5px;
     }
 }
 
@@ -114,15 +138,7 @@ nav a:link, nav a:visited{
     text-decoration: none;
 }
 
- nav a:hover, nav a:focus{
-    background-color: #304cfd;
-    -o-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    padding: 5px;
-}
+
 .nav-toggle{
     font-size: 1.5rem;
     color: #49a6e9;
@@ -228,11 +244,11 @@ figcaption{
 }
 .fig-img{
     border: 1.5px solid #304cfd;
-    border-radius: 20px;
+    -o-border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 20px;
 }
 .fig-img img {
     object-fit: cover;
@@ -244,10 +260,17 @@ figcaption a{
     text-decoration: none;
     font-size: 16px;
 }
+.proj-done{
+    flex-grow: 0;
+    flex-shrink: 5;
+}
 @media only screen and (min-width: 768px){
     .grid-container {
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        grid-gap: 100px; 
+        grid-gap: 100px;  */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 13rem;
     }
 }

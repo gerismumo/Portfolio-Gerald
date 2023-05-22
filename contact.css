@@ -28,9 +28,6 @@
     }
   
     nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
     }
@@ -41,7 +38,11 @@
    }
  
    .links {
-    display:block;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 100%;
+    display:inline-block;
+    background-color: #304cfd;
     height: 0;
     overflow: hidden;
     -o-transition:all 0.3s linear;
@@ -49,6 +50,20 @@
     -moz-transition:all 0.3s linear;
     -ms-transition:all 0.3s linear;
     transition:all 0.3s linear;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a:focus{
+    background-color: #304cfd;
+    padding: 5px;
+}
+hr{
+    margin-right: 60px;
+    color: gray;
 }
 .show-links {
     height: auto;

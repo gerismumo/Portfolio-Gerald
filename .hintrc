@@ -9,6 +9,12 @@
         "link-name": "off",
         "button-name": "off"
       }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
     ]
   }
 }
