@@ -22,12 +22,12 @@ const projectDone = [
     {
         img: "images/power_gen-20230510-0002.jpg",
         link: "#",
-        name: "peterairnb"
+        name: "peterairandb"
     }
 ]
 const gridContainer = document.querySelector(".grid-container");
 
-window.addEventListener("DOMContentloaded", function(){
+window.addEventListener("DOMContentLoaded", function(){
     displayGridItems(projectDone);
 
 });
@@ -36,14 +36,13 @@ function displayGridItems(gridItems){
     let displayItems = gridItems.map(function(item){
         return `<div class="proj-done">
         <figure class="fig-img">
-            <img src=${item.img} alt=${item.name}>
+            <img src="${item.img}" alt="${item.name}">
             <figcaption>
-                <a href= ${item.link}>${item.name}</a>
+                <a href= "${item.link}">"${item.name}"</a>
             </figcaption>
         </figure>
          </div>`
     });
     displayItems = displayItems.join("");
-    gridContainer.innerHTML = displayItems;
-   
+    gridContainer.innerHTML = displayItems; 
 }

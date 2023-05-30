@@ -87,8 +87,8 @@ hr{
     }
     .min-container{
         display: flex;
-        /* justify-content: space-between; */
         flex-direction: row;
+        overflow-y: auto;
     }
     .figureinfo{
         justify-content: flex-start;
@@ -222,7 +222,7 @@ figcaption{
 }
 .some-info{
     margin: 30px;
-    
+    overflow-y: auto;
 }
 .projects{
     font-size: 18px;
@@ -271,6 +271,6 @@ figcaption a{
         grid-gap: 100px;  */
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem 13rem;
+        gap: 1rem 0rem;
     }
 }
