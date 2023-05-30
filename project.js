@@ -38,7 +38,7 @@ function displayGridItems(gridItems){
         <figure class="fig-img">
             <img src="${item.img}" alt="${item.name}">
             <figcaption>
-                <a href= "${item.link}">"${item.name}"</a>
+                <a href= "${item.link}">${item.name}</a>
             </figcaption>
         </figure>
          </div>`
