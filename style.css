@@ -1,6 +1,11 @@
+*{
+    box-sizing: border-box;
+    
+}
 @media only screen and (max-width: 767px){
     body{
         background-color: grey;
+        scroll-behavior: smooth;
     }
     .container{
         position: relative;
@@ -70,6 +75,10 @@ hr{
 .show-links {
     height: auto;
   }
+  .skill h2{
+   margin-top:20px;
+}
+
 }
 @media only screen and (min-width: 768px){
     body{
@@ -164,8 +173,11 @@ img{
     border: 1px gray solid;
 }
 figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     font-size: 22px;
     font-weight: bold;
 }
@@ -261,6 +273,7 @@ figcaption{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
+    padding-bottom: 10px;
 }
 .skill h2{
     margin-top: 10px;

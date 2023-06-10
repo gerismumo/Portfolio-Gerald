@@ -167,8 +167,11 @@ nav a:hover,a:focus{
     border: 1px gray solid;
 }
 figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     font-size: 22px;
     font-weight: bold;
 }
