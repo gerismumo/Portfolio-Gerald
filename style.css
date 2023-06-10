@@ -78,7 +78,11 @@ hr{
   .skill h2{
    margin-top:20px;
 }
-
+.skill{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
 }
 @media only screen and (min-width: 768px){
     body{
