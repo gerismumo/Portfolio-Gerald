@@ -1,28 +1,28 @@
 const projectDone = [
     {
-        img: "images/power_gen-20230510-0002.jpg",
+        img: "images/pexels-miguel-á-padriñán-3785927.jpg",
         link: "https://github.com/gerismumo",
-        name: "Cummins generator"
+        name: "Cummins page"
     },
     {
-        img: "images/power_gen-20230510-0002.jpg",
+        img: "images/pexels-photomix-company-230544.jpg",
         link: "https://github.com/gerismumo",
         name: "Landing page"
     },
     {
-        img: "images/power_gen-20230510-0002.jpg",
+        img: "images/pexels-tranmautritam-326522.jpg",
         link: "https://github.com/gerismumo",
         name: "Aroma cafe"
     },
     {
-        img: "images/power_gen-20230510-0002.jpg",
+        img: "images/pexels-mikael-blomkvist-6476595.jpg",
         link: "https://github.com/gerismumo",
         name: "Essay page"
     },
     {
-        img: "images/power_gen-20230510-0002.jpg",
+        img: "images/pexels-cottonbro-studio-5077053.jpg",
         link: "https://github.com/gerismumo",
-        name: "Peter airandb"
+        name: "Peter airanb"
     }
 ]
 const gridContainer = document.querySelector(".grid-container");

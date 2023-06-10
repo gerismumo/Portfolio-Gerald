@@ -10,7 +10,7 @@
     .container{
         position: relative;
         background-color: whitesmoke;
-        margin: 20px;
+        /* margin: 20px; */
         -o-border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
@@ -86,7 +86,7 @@ hr{
     }
     .container{
         background-color: whitesmoke;
-        margin: 20px;
+        /* margin: 20px; */
         -o-border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
@@ -274,6 +274,7 @@ figcaption{
     -ms-border-radius: 10px;
     border-radius: 10px;
     padding-bottom: 10px;
+    padding-top:5px;
 }
 .skill h2{
     margin-top: 10px;

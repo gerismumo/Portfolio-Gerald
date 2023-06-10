@@ -84,7 +84,7 @@ hr{
     }
     .container{
         background-color: whitesmoke;
-        margin: 20px;
+        /* margin: 20px; */
         -o-border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
